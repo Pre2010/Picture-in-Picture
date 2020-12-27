@@ -9,11 +9,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
-    <title>Template</title>
+    <title>Picture in Picture</title>
 </head>
 <body>
-    <!-- Icon -->
-    <i class="fab fa-android"></i>
+    <!-- Video -->
+    <video id="video" controls height="360" width="640" hidden></video>
+
+    <!-- Button -->
+    <div class="button-container" id="button-container">
+        <button id="button">Start</button>
+    </div>
+
+    <!-- Error -->
+    <div class="error-container" id="error-container" hidden>
+        <p class="error">An error has occurred with sharing the Display Media.</p>
+    </div>
+    
     <!-- Script -->
     <script src="./script.js">
         
